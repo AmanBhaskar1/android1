@@ -41,7 +41,7 @@ const ContactList = () => {
   ];
   return (
     <View>
-      <Text style={[styles.heading, styles.text]}>Contact List</Text>
+      <Text style={styles.heading}>Contact List</Text>
       <ScrollView style={styles.container}>
         {contacts.map(({uid, name, status, imgUrl}) => (
           <View key={uid} style={styles.userCard}>
@@ -52,8 +52,8 @@ const ContactList = () => {
               style={styles.userImg}
             />
             <View>
-              <Text style={[styles.userName, styles.text]}>{name}</Text>
-              <Text style={[styles.userStatus, styles.text]}>{status}</Text>
+              <Text style={styles.userName}>{name}</Text>
+              <Text style={styles.userStatus}>{status}</Text>
             </View>
           </View>
         ))}
@@ -70,7 +70,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     paddingHorizontal: 5,
   },
-  text: {color: 'white'},
   container: {
     paddingHorizontal: 16,
     marginBottom: 4,

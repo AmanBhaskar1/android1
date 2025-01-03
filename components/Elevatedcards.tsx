@@ -4,23 +4,23 @@ import React from 'react';
 const ElevatedCards = () => {
   return (
     <View>
-      <Text style={[styles.heading, styles.text]}>Elevated Cards</Text>
+      <Text style={styles.heading}>Elevated Cards</Text>
       <ScrollView horizontal={true}>
         <View style={styles.container}>
           <View style={[styles.card, styles.cardOne]}>
-            <Text style={styles.text}>Red</Text>
+            <Text>Red</Text>
           </View>
           <View style={[styles.card, styles.cardTwo]}>
-            <Text style={styles.text}>Blue</Text>
+            <Text>Blue</Text>
           </View>
           <View style={[styles.card, styles.cardThree]}>
-            <Text style={styles.text}>Green</Text>
+            <Text>Green</Text>
           </View>
           <View style={[styles.card, styles.cardFour]}>
-            <Text style={styles.text}>Cyan</Text>
+            <Text>Cyan</Text>
           </View>
           <View style={[styles.card, styles.cardFive]}>
-            <Text style={styles.text}>Orange</Text>
+            <Text>Orange</Text>
           </View>
         </View>
       </ScrollView>
@@ -52,5 +52,4 @@ const styles = StyleSheet.create({
   cardThree: {backgroundColor: 'green'},
   cardFour: {backgroundColor: 'cyan'},
   cardFive: {backgroundColor: 'orange'},
-  text: {color: 'white'},
 });

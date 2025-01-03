@@ -4,7 +4,7 @@ import React from 'react';
 const FancyCards = () => {
   return (
     <View>
-      <Text style={[styles.heading, styles.text]}>Fancy Card</Text>
+      <Text style={styles.heading}>Fancy Card</Text>
       <ScrollView horizontal={true}>
         <View style={[styles.card, styles.cardElevated]}>
           <Image
@@ -70,7 +70,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     paddingHorizontal: 5,
   },
-  text: {color: 'white'},
   card: {
     margin: 5,
     height: 350,
